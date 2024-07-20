@@ -1,0 +1,42 @@
+:root {
+    --rosa-color: #D01760;
+    --rosê-color: #FFB3D1;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+footer{
+    background-color: var(--rosê-color);
+}
+
+.container-footer{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-footer{
+
+}
+
+.redes-sociais{
+}
+
+.redes-sociais i{
+    color: #000;
+    font-size: 3vh;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
