@@ -10,8 +10,84 @@
 }
 
 
+.titulo-texto{
+    font-family: "Itim", cursive;
+    color: var(--rosa-color);
+    margin-left: 10%;
+    font-size: 5.5vh;
+}
+
+.conteudo-quem-somos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-quem-somos img{
+    max-width: 25%;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 10%;
+    border-radius: 2vw;
+}
+
+.conteudo-quem-somos .texto-quem-somos{
+    background-color: var(--rosa-color);
+    width: 95vh;
+    height: auto;
+    border-radius: 2vw;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.texto-quem-somos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Itim", cursive;
+    color: var(--rosê-color);
+    font-size: 1.50vw;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.texto-5-motivos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 1%;
+}
+
+.texto-5-motivos > .full-width {
+    grid-column: span 2;
+    background-color: var(--rosa-color);
+    border-radius: 2vw;
+    font-family: "Itim", cursive;
+    color: var(--rosê-color);
+    font-size: 1.50vw;
+}
+
+.motivo{
+    background-color: var(--rosa-color);
+    border-radius: 2vw;
+    font-family: "Itim", cursive;
+    color: var(--rosê-color);
+    font-size: 1.50vw;
+}
+
 footer{
-    background-color: var(--rosê-color);
+    background-color: var(--rosa-color);
 }
 
 .container-footer{
@@ -22,15 +98,16 @@ footer{
 }
 
 .titulo-footer{
-
+    color: var(--rosê-color);
+    margin-left: 10%;
 }
 
 .redes-sociais{
 }
 
 .redes-sociais i{
-    color: #000;
-    font-size: 3vh;
+    color: var(--rosê-color);
+    font-size: 5vh;
     margin-right: 30px;
 }
 
