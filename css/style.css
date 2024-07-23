@@ -1,28 +1,34 @@
 :root {
     --rosa-color: #D01760;
     --rosê-color: #FFB3D1;
-  }
+}
 
-
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-
-.titulo-texto{
-    font-family: "Itim", cursive;
+body {
+    font-family: 'Itim', cursive;
+    background-color: var(--rosê-color);
     color: var(--rosa-color);
+}
+
+.titulo-texto {
     margin-left: 10%;
     font-size: 5.5vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
 }
 
-.conteudo-quem-somos{
+.conteudo-quem-somos {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40vh;
 }
 
-.conteudo-quem-somos img{
+.conteudo-quem-somos img {
     max-width: 25%;
     height: auto;
     margin-top: 1%;
@@ -30,7 +36,7 @@
     border-radius: 2vw;
 }
 
-.conteudo-quem-somos .texto-quem-somos{
+.conteudo-quem-somos .texto-quem-somos {
     background-color: var(--rosa-color);
     width: 95vh;
     height: auto;
@@ -39,19 +45,18 @@
     margin-top: 1%;
 }
 
-.texto-quem-somos p{
+.texto-quem-somos p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Itim", cursive;
+    font-family: 'Itim', cursive;
     color: var(--rosê-color);
     font-size: 1.50vw;
     margin-left: 3%;
     margin-top: 10%;
 }
 
-
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +64,7 @@
     margin-bottom: 10%;
 }
 
-.texto-5-motivos{
+.texto-5-motivos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -73,47 +78,113 @@
     grid-column: span 2;
     background-color: var(--rosa-color);
     border-radius: 2vw;
-    font-family: "Itim", cursive;
+    font-family: 'Itim', cursive;
     color: var(--rosê-color);
     font-size: 1.50vw;
 }
 
-.motivo{
+.motivo {
     background-color: var(--rosa-color);
     border-radius: 2vw;
-    font-family: "Itim", cursive;
+    font-family: 'Itim', cursive;
     color: var(--rosê-color);
     font-size: 1.50vw;
 }
 
-footer{
+footer {
     background-color: var(--rosa-color);
 }
 
-.container-footer{
+.container-footer {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titulo-footer{
+.titulo-footer {
     color: var(--rosê-color);
     margin-left: 10%;
 }
 
-.redes-sociais{
+.redes-sociais {
 }
 
-.redes-sociais i{
+.redes-sociais i {
     color: var(--rosê-color);
     font-size: 5vh;
     margin-right: 30px;
 }
 
+/*efeitos*/
+.efeito-txt-topo, .efeito-titulo-topo, .efeito1, .efeito2, .efeito3, .efeito4, .efeito5 {
+    visibility: hidden;
+}
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo-texto {
+        font-size: 4vh;
+        margin: 5%;
+        text-align: center;
+    }
 
+    .conteudo-quem-somos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20vh;
+    }
 
+    .conteudo-quem-somos img {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
 
+    .conteudo-quem-somos .texto-quem-somos {
+        width: 90%;
+        margin: 0;
+    }
 
+    .texto-quem-somos p {
+        font-size: 3vw;
+        margin: 5%;
+    }
 
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-5-motivos {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        width: 90%;
+    }
+
+    .texto-5-motivos .full-width {
+        grid-column: span 1;
+        font-size: 3vw;
+    }
+
+    .motivo {
+        font-size: 3vw;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .titulo-footer {
+        margin: 10px 0;
+    }
+
+    .redes-sociais i {
+        font-size: 4vh;
+        margin: 10px 5px;
+    }
+}
