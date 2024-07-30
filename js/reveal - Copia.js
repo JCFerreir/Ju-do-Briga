@@ -3,13 +3,13 @@ window.revelar = ScrollReveal({reset:true})
 //topo
 
 revelar.reveal('.efeito-txt-topo', {
-    duration: 1000,
+    duration: 2000,
     distance: '90px',
     delay: 500
 })
 
 revelar.reveal('.efeito-titulo-topo', {
-    duration: 1000,
+    duration: 2000,
     distance: '90px',
     origin: 'left'
 })

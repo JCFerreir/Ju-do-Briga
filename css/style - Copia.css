@@ -15,6 +15,28 @@ body {
     color: var(--rosa-color);
 }
 
+/*header*/
+/* Centraliza a navbar e garante que os itens fiquem no centro */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os itens da navbar */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+/* Centraliza a lista de navegação */
+.navbar-nav {
+    flex-grow: 1; /* Permite que a lista de navegação ocupe o espaço disponível */
+    justify-content: center; /* Centraliza os itens "Home" */
+    margin: 0; /* Remove margens indesejadas */
+}
+
+/* Define o espaçamento entre os itens */
+.navbar-nav .nav-item {
+    margin: 0 10px; /* Ajuste o valor conforme necessário */
+}
+/*final do header*/
+
+/*main*/
 .titulo-texto {
     margin-left: 10%;
     font-size: 5.5vh;
@@ -90,7 +112,10 @@ body {
     color: var(--rosê-color);
     font-size: 1.50vw;
 }
+/*final do main*/
 
+
+/*footer*/
 footer {
     background-color: var(--rosa-color);
 }
@@ -107,12 +132,11 @@ footer {
     margin-left: 10%;
 }
 
-.redes-sociais {
-}
+
 
 .redes-sociais i {
     color: var(--rosê-color);
-    font-size: 5vh;
+    font-size: 4vh;
     margin-right: 30px;
 }
 
@@ -120,6 +144,8 @@ footer {
 .efeito-txt-topo, .efeito-titulo-topo, .efeito1, .efeito2, .efeito3, .efeito4, .efeito5 {
     visibility: hidden;
 }
+/*final do footer*/
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -159,7 +185,7 @@ footer {
 
     .texto-5-motivos {
         grid-template-columns: 1fr;
-        gap: 6px;
+        gap: 5px;
         width: 90%;
     }
 
@@ -187,4 +213,5 @@ footer {
         font-size: 4vh;
         margin: 10px 5px;
     }
+
 }
