@@ -1,5 +1,20 @@
 window.revelar = ScrollReveal({reset:true})
 
+
+//cumprimento
+revelar.reveal('.titulos', {
+    duration: 1000,
+    distance: '90px',
+    delay: 500,
+    origin: 'left'
+})
+
+revelar.reveal('.imagem-wrapper', {
+    duration: 1000,
+    distance: '90px',
+    delay: 600,
+})
+
 //topo
 
 revelar.reveal('.efeito-txt-topo', {
@@ -43,5 +58,5 @@ revelar.reveal('.efeito4', {
 revelar.reveal('.efeito5', {
     duration: 2000,
     distance: '90px',
-    delay: 1500
+    delay: 1400
 })

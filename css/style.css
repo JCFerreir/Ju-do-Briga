@@ -37,30 +37,87 @@ body {
     color: var(--rosa-color);
 }
 
+/*cumprimento*/
+
 .titulo-principal{
-    margin-left: 10%;
     font-size: 6.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
-    margin-top: 30vh;
+    margin-top: 5vh;
 }
 
 .titulo-secundario{
-    margin-left: 10%;
     font-size: 3.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
     margin-bottom: 40vh;
 }
 
+.cumprimento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40vh;
+    margin-left: 10%;
+}
 
+.titulos {
+    display: flex;
+    flex-direction: column;
+}
 
+.titulo-principal,
+.titulo-secundario {
+    border-bottom: 2px solid var(--rosa-color);
+    margin-bottom: 10px;
+}
+
+.titulo-principal {
+    width: 70vh;
+}
+
+.titulo-secundario {
+    width: 81vh;
+}
+
+.imagem-wrapper {
+    position: relative; /* Define o contexto de posicionamento para elementos filhos */
+    max-width: 25%;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 13%;
+    border-radius: 2vw;
+}
+
+.imagem-fundo {
+    position: absolute;
+    top: -30px; /* Desloca a cor de fundo para cima */
+    left: 30px; /* Desloca a cor de fundo para a direita */
+    width: 100%;
+    height: 100%;
+    background-color: var(--rosa-color); /* Cor de fundo */
+    z-index: 1;
+    border-radius: 2vw; /* Mantém o mesmo arredondamento da imagem */
+}
+
+.img-cumprimento {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 2; /* Acima da imagem de fundo */
+    border-radius: 2vw;
+}
+
+/*final do cumprimento*/
+
+/*quem somos*/
 .titulo-texto {
     margin-left: 10%;
     font-size: 5.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
 }
+
 
 .conteudo-quem-somos {
     display: flex;
@@ -96,6 +153,9 @@ body {
     margin-top: 10%;
 }
 
+/*final do quem somos*/
+
+/*5 motivos*/
 .container {
     display: flex;
     justify-content: center;
@@ -120,7 +180,7 @@ body {
     border-radius: 2vw;
     font-family: 'Itim', cursive;
     color: var(--rosê-color);
-    font-size: 1.50vw;
+    font-size: 3.5vh;
 }
 
 .motivo {
@@ -128,8 +188,10 @@ body {
     border-radius: 2vw;
     font-family: 'Itim', cursive;
     color: var(--rosê-color);
-    font-size: 1.50vw;
+    font-size: 3.5vh;
 }
+
+/*final do 5 motivos*/
 
 /*FINAL DO MAIN*/
 
@@ -160,7 +222,7 @@ footer {
 }
 
 /*efeitos*/
-.efeito-txt-topo, .efeito-titulo-topo, .efeito1, .efeito2, .efeito3, .efeito4, .efeito5 {
+.efeito-txt-topo, .efeito-titulo-topo, .efeito1, .efeito2, .efeito3, .efeito4, .efeito5, .titulos,.imagem-wrapper {
     visibility: hidden;
 }
 
