@@ -276,9 +276,6 @@ footer {
     margin-left: 10%;
 }
 
-.redes-sociais {
-}
-
 .redes-sociais i {
     color: var(--rosê-color);
     font-size: 5vh;
@@ -359,3 +356,102 @@ footer {
         margin: 10px 5px;
     }
 }
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  /*foto*/
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+  } 
+  
+
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  /*botão*/
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 5vw;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    margin-top: 3vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFB3D1  100%);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+
+  .polaroide {
+    background: var(--rosa-color);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.polaroide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1vw;
+
+}
+
+.Sabor {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+  
+
+ 
+
+ 
+
+  
+  
