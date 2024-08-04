@@ -1,0 +1,21 @@
+:root {
+    --rosa-color: #D01760;
+    --rosê-color: #FFB3D1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.titulo-orçamento{
+    font-size: 5.5vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
+}
