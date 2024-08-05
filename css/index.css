@@ -318,7 +318,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-bottom: 10%;
 }
 
 .texto-5-motivos {
@@ -355,6 +354,7 @@ body {
 /*FOOTER*/
 footer {
     background-color: var(--rosa-color);
+    margin-top: 10%;
 }
 
 .container-footer {
