@@ -20,3 +20,8 @@
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
 }
+
+.img-orçamento{
+    max-width: 150px;
+    height: auto;
+}
