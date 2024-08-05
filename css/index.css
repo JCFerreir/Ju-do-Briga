@@ -409,7 +409,7 @@ footer {
     }
 
     .texto-quem-somos p {
-        font-size: 3vw;
+        font-size: 5vw;
         margin: 5%;
     }
 
@@ -426,11 +426,11 @@ footer {
 
     .texto-5-motivos .full-width {
         grid-column: span 1;
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .motivo {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     .container-footer {
