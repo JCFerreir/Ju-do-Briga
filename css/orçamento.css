@@ -10,77 +10,51 @@
     box-sizing: border-box;
 }
 
-.formulario {
+.formulario{
     margin-left: 10%;
     margin-right: 10%;
     font-family: 'Itim', cursive;
 }
 
-.titulo-orçamento {
+.titulo-orçamento{
     font-size: 5.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
 }
 
-.img-orçamento {
+.img-orçamento{
     max-width: 150px;
     height: auto;
 }
 
-.checkbox-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
-    gap: 16px; /* Espaçamento entre os itens */
-    margin-bottom: 15px; /* Espaçamento abaixo da grid */
-}
-
-/* Mantém a estilização dos checkboxes e labels como já está */
-.checkbox-grid div {
-    margin-bottom: 0; /* Remove o espaçamento extra */
-}
-
-.product-card {
+.quantity-control {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 8px;
+    margin-left: auto;
+  }
+  
+  .quantity-control button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 2vw;
+    background-color: var(--rosa-color);
+    color: var(--rosê-color);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .quantity-control input {
+    width: 80px;
     text-align: center;
-}
+    border: 1px solid var(--rosa-color) ;
+    margin: 0 5px;
+    border-radius: 2vw;
+  }
 
-.product-card input[type="checkbox"] {
-    margin-bottom: 8px; /* Espaçamento entre o checkbox e o label */
-}
-
-.polaroide {
-    position: relative;
-}
-
-.polaroide img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Responsividade */
-@media (max-width: 1200px) {
-    .checkbox-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
-    }
-}
-
-@media (max-width: 800px) {
-    .checkbox-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
-    }
-}
-
-@media (max-width: 500px) {
-    .checkbox-grid {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
-    }
-}
+  .item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
