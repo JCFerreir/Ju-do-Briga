@@ -29,7 +29,7 @@ function decrementQuantity(inputId) {
     itemQuantities.forEach(function(item) {
       var quantity = document.getElementById(item.id).value;
       if (quantity > 0) {
-        items.push(item.label + " QTD: " + quantity + "x");
+        items.push(item.label + ": " + quantity + "x");
       }
     });
   
