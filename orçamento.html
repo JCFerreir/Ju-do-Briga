@@ -87,45 +87,59 @@
     <form action="" class="formulario">
       <label for="name" class="form-label titulo-orçamento">Nome:</label>
       <input type="name" class="form-control" id="name" placeholder="nome" style="margin-bottom: 10px; background-color: #fff; border-color: var(--rosa-color);">
-  
-      <label for="email" class="form-label titulo-orçamento">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" style="margin-bottom: 10px; background-color: #fff; border-color: var(--rosa-color);">
-  
+      
+      <label for="CordaForma" class="form-label titulo-orçamento">Quais são as cores das forminhas?</label>
+      <input type="text" class="form-control" id="CordaForma" placeholder="..." style="margin-bottom: 10px; background-color: #fff; border-color: var(--rosa-color);">
+
+      <label for="data" class="form-label titulo-orçamento">Qual a data de entrega?</label>
+      <input type="date" class="form-control" id="data" placeholder="..." style="margin-bottom: 10px; background-color: #fff; border-color: var(--rosa-color);">
+
       <h2 style="font-family: 'Itim', cursive; color: var(--rosa-color);">Selecione os itens:</h2>
   
       <div class="item-container" style="margin-bottom: 15px;">
         <div class="polaroide img-orçamento">
           <img src="img/imgCumprimento.jpg" alt="Foto 1">
-          <div class="Sabor">Legenda</div>
         </div>
-        <div class="quantity-control">
-          <button type="button" class="decrement" onclick="decrementQuantity('quantity1')">-</button>
-          <input type="number" class="quantity-input" id="quantity1" value="0" min="0">
-          <button type="button" class="increment" onclick="incrementQuantity('quantity1')">+</button>
-        </div>
-      </div>
-  
-      <div class="item-container" style="margin-bottom: 15px;">
-        <div class="polaroide img-orçamento">
-          <img src="img/imgCumprimento.jpg" alt="Foto 1">
-          <div class="Sabor">Legenda</div>
-        </div>
-        <div class="quantity-control">
-          <button type="button" class="decrement" onclick="decrementQuantity('quantity2')">-</button>
-          <input type="number" class="quantity-input" id="quantity2" value="0" min="0">
-          <button type="button" class="increment" onclick="incrementQuantity('quantity2')">+</button>
+
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">R$ 0,00</div>
+          <div class="quantity-control">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity1')">-</button>
+            <input type="number" class="quantity-input" id="quantity1" value="0" min="0">
+            <button type="button" class="increment" onclick="incrementQuantity('quantity1')">+</button>
+          </div>
         </div>
       </div>
   
       <div class="item-container" style="margin-bottom: 15px;">
         <div class="polaroide img-orçamento">
           <img src="img/imgCumprimento.jpg" alt="Foto 1">
-          <div class="Sabor">Legenda</div>
         </div>
-        <div class="quantity-control">
-          <button type="button" class="decrement" onclick="decrementQuantity('quantity3')">-</button>
-          <input type="number" class="quantity-input" id="quantity3" value="0" min="0">
-          <button type="button" class="increment" onclick="incrementQuantity('quantity3')">+</button>
+
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">R$ 0,00</div>
+          <div class="quantity-control">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity2')">-</button>
+            <input type="number" class="quantity-input" id="quantity2" value="0" min="0">
+            <button type="button" class="increment" onclick="incrementQuantity('quantity2')">+</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item-container" style="margin-bottom: 15px;">
+        <div class="polaroide img-orçamento">
+          <img src="img/imgCumprimento.jpg" alt="Foto 1">
+        </div>
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">R$ 0,00</div>
+          <div class="quantity-control">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity3')">-</button>
+            <input type="number" class="quantity-input" id="quantity3" value="0" min="0">
+            <button type="button" class="increment" onclick="incrementQuantity('quantity3')">+</button>
+          </div>
         </div>
       </div>
   
