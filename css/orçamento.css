@@ -17,7 +17,7 @@
 }
 
 .titulo-orçamento{
-    font-size: 5.5vh;
+    font-size: 4.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
 }
@@ -75,5 +75,15 @@
     color: #fff;
     
   }
+
+  /* Estilos responsivos para dispositivos móveis */
+@media (max-width: 480px) {
+  .titulo-orçamento {
+      margin-top: 2vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+}
+
   
   
