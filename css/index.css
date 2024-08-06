@@ -145,7 +145,7 @@ body {
 }
 
 /* Estilos responsivos para dispositivos móveis */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .titulo-principal {
         margin-top: 20vh;
         font-size: 4vh;
