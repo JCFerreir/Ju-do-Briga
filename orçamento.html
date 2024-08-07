@@ -94,7 +94,7 @@
       <label for="data" class="form-label titulo-orçamento">Qual a data de entrega?</label>
       <input type="date" class="form-control" id="data" placeholder="..." style="margin-bottom: 10px; background-color: #fff; border-color: var(--rosa-color);">
 
-      <h2 style="font-family: 'Itim', cursive; color: var(--rosa-color);">Selecione os itens:</h2>
+      <h2 style="font-family: 'Itim', cursive; color: var(--rosa-color);">Selecione os itens unitários:</h2>
   
       <div class="item-container" style="margin-bottom: 15px;">
         <div class="polaroide img-orçamento">
@@ -103,10 +103,12 @@
 
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 2,50</div>
+          <div class="valor">Preço: R$ 2,50</div>
+          <div class="grama">Grama: 18g</div>
+          <div class="quantidade">quantidade de brigadeiros: 1</div>
           <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity1')">-</button>
-            <input type="number" class="quantity-input" id="quantity1" value="0" min="0">
+            <input type="number" class="quantity-input" id="quantity1" value="0" min="0" readonly>
             <button type="button" class="increment" onclick="incrementQuantity('quantity1')">+</button>
           </div>
         </div>
@@ -119,10 +121,12 @@
 
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 2,50</div>
+          <div class="valor">Preço: R$ 2,50</div>
+          <div class="grama">Grama: 18g</div>
+          <div class="quantidade">quantidade de brigadeiros: 1</div>
           <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity2')">-</button>
-            <input type="number" class="quantity-input" id="quantity2" value="0" min="0">
+            <input type="number" class="quantity-input" id="quantity2" value="0" min="0" readonly>
             <button type="button" class="increment" onclick="incrementQuantity('quantity2')">+</button>
           </div>
         </div>
@@ -134,11 +138,69 @@
         </div>
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 2,50</div>
+          <div class="valor">Preço: R$ 2,50</div>
+          <div class="grama">Grama: 18g</div>
+          <div class="quantidade">quantidade de brigadeiros: 1</div>
           <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity3')">-</button>
-            <input type="number" class="quantity-input" id="quantity3" value="0" min="0">
+            <input type="number" class="quantity-input" id="quantity3" value="0" min="0" readonly>
             <button type="button" class="increment" onclick="incrementQuantity('quantity3')">+</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="font-family: 'Itim', cursive; color: var(--rosa-color);">Selecione o cento:</h2>
+
+      
+      <div class="item-container" style="margin-bottom: 15px;">
+        <div class="polaroide img-orçamento">
+          <img src="img/imgCumprimento.jpg" alt="Foto 1">
+        </div>
+
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">Preço: R$ 200</div>
+          <div class="grama">Grama: 15g</div>
+          <div class="quantidade">quantidade de brigadeiros: 100</div>
+          <div class="quantity-control" data-price="200">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity4')">-</button>
+            <input type="number" class="quantity-input" id="quantity4" value="0" min="0" readonly>
+            <button type="button" class="increment" onclick="incrementQuantity('quantity4')">+</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item-container" style="margin-bottom: 15px;">
+        <div class="polaroide img-orçamento">
+          <img src="img/imgCumprimento.jpg" alt="Foto 1">
+        </div>
+
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">Preço: R$ 200</div>
+          <div class="grama">Grama: 15g</div>
+          <div class="quantidade">quantidade de brigadeiros: 100</div>
+          <div class="quantity-control" data-price="200">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity5')">-</button>
+            <input type="number" class="quantity-input" id="quantity5" value="0" min="0" readonly>
+            <button type="button" class="increment" onclick="incrementQuantity('quantity5')">+</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="item-container" style="margin-bottom: 15px;">
+        <div class="polaroide img-orçamento">
+          <img src="img/imgCumprimento.jpg" alt="Foto 1">
+        </div>
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Legenda</div>
+          <div class="valor">Preço: R$ 200</div>
+          <div class="grama">Grama: 15g</div>
+          <div class="quantidade">quantidade de brigadeiros: 100</div>
+          <div class="quantity-control" data-price="200">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity6')">-</button>
+            <input type="number" class="quantity-input" id="quantity6" value="0" min="0" readonly>
+            <button type="button" class="increment" onclick="incrementQuantity('quantity6')">+</button>
           </div>
         </div>
       </div>

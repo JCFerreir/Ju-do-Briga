@@ -1,3 +1,4 @@
+//BOTÃO DE CONTROLE DE QUANTIDADE
 function decrementQuantity(inputId) {
   var input = document.getElementById(inputId);
   var value = parseInt(input.value);
@@ -19,7 +20,10 @@ function updateTotal() {
   var itemQuantities = [
     { id: 'quantity1', price: 2.50 }, // Preço do Item 1
     { id: 'quantity2', price: 2.50 }, // Preço do Item 2
-    { id: 'quantity3', price: 2.50 } // Preço do Item 3
+    { id: 'quantity3', price: 2.50 }, // Preço do Item 3
+    { id: 'quantity4', price: 200 }, // Preço do Item 4
+    { id: 'quantity5', price: 200 }, // Preço do Item 5
+    { id: 'quantity6', price: 200 } // Preço do Item 6
     // Adicione mais itens conforme necessário
   ];
 
@@ -30,7 +34,10 @@ function updateTotal() {
 
   document.getElementById('total-price').textContent = total.toFixed(2);
 }
+//FINAL DO BOTÃO DE CONTROLE DE QUANTIDADE
 
+
+//SISTEMA PARA MANDAR PARA O WHATSAPP
 function sendwhatsapp() {
   var numTelefone = "+5511951526585"; // Número de telefone no formato internacional
   var nome = document.getElementById('name').value;
@@ -42,7 +49,10 @@ function sendwhatsapp() {
   var itemQuantities = [
     {id: 'quantity1', label: 'Item 1'},
     {id: 'quantity2', label: 'Item 2'},
-    {id: 'quantity3', label: 'Item 3'}
+    {id: 'quantity3', label: 'Item 3'},
+    {id: 'quantity4', label: 'Item 4'},
+    {id: 'quantity5', label: 'Item 5'},
+    {id: 'quantity6', label: 'Item 6'}
     // Adicione mais itens conforme necessário
   ];
 
@@ -73,3 +83,4 @@ function sendwhatsapp() {
 
   window.open(url, '_blank');
 }
+//FINAL DO SISTEMA PARA MANDAR PARA O WHATSAPP

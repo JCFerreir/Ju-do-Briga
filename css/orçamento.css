@@ -71,9 +71,17 @@
   }
   
   .valor{
-    margin-bottom: 5px;
-    color: #fff;
+    color: var(--rosa-color);
     
+  }
+
+  .grama{
+    color: var(--rosa-color);
+  }
+
+  .quantidade{
+    margin-bottom: 5px;
+    color: var(--rosa-color);
   }
 
   /* Estilos responsivos para dispositivos móveis */
