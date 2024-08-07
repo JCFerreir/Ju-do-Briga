@@ -103,8 +103,8 @@
 
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 0,00</div>
-          <div class="quantity-control">
+          <div class="valor">R$ 2,50</div>
+          <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity1')">-</button>
             <input type="number" class="quantity-input" id="quantity1" value="0" min="0">
             <button type="button" class="increment" onclick="incrementQuantity('quantity1')">+</button>
@@ -119,8 +119,8 @@
 
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 0,00</div>
-          <div class="quantity-control">
+          <div class="valor">R$ 2,50</div>
+          <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity2')">-</button>
             <input type="number" class="quantity-input" id="quantity2" value="0" min="0">
             <button type="button" class="increment" onclick="incrementQuantity('quantity2')">+</button>
@@ -134,13 +134,17 @@
         </div>
         <div class="description-and-quantity">
           <div class="Sabor-orçamento">Legenda</div>
-          <div class="valor">R$ 0,00</div>
-          <div class="quantity-control">
+          <div class="valor">R$ 2,50</div>
+          <div class="quantity-control" data-price="2.50">
             <button type="button" class="decrement" onclick="decrementQuantity('quantity3')">-</button>
             <input type="number" class="quantity-input" id="quantity3" value="0" min="0">
             <button type="button" class="increment" onclick="incrementQuantity('quantity3')">+</button>
           </div>
         </div>
+      </div>
+
+      <div class="total-container">
+        <p><strong>Total:</strong> R$ <span id="total-price">0.00</span></p>
       </div>
   
       <!-- Adicione mais itens conforme necessário -->

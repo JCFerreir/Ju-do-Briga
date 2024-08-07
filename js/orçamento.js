@@ -4,12 +4,31 @@ function decrementQuantity(inputId) {
   if (value > 0) {
     input.value = value - 1;
   }
+  updateTotal(); // Atualiza o total após diminuir a quantidade, inclusive para 0
 }
 
 function incrementQuantity(inputId) {
   var input = document.getElementById(inputId);
   var value = parseInt(input.value);
   input.value = value + 1;
+  updateTotal(); // Atualiza o total após aumentar a quantidade
+}
+
+function updateTotal() {
+  var total = 0.00;
+  var itemQuantities = [
+    { id: 'quantity1', price: 2.50 }, // Preço do Item 1
+    { id: 'quantity2', price: 2.50 }, // Preço do Item 2
+    { id: 'quantity3', price: 2.50 } // Preço do Item 3
+    // Adicione mais itens conforme necessário
+  ];
+
+  itemQuantities.forEach(function(item) {
+    var quantity = parseInt(document.getElementById(item.id).value);
+    total += item.price * (isNaN(quantity) ? 0 : quantity);
+  });
+
+  document.getElementById('total-price').textContent = total.toFixed(2);
 }
 
 function sendwhatsapp() {
@@ -43,11 +62,14 @@ function sendwhatsapp() {
     dataFormatada = partesData[2] + "/" + partesData[1] + "/" + partesData[0];
   }
 
+  var total = document.getElementById('total-price').textContent;
+
   var url = "https://wa.me/" + numTelefone + "?text="
     + "*Nome:* " + encodeURIComponent(nome) + "%0a"
     + "*Itens selecionados:* " + encodeURIComponent(itemsText) + "%0a"
     + "*Cor da forma:* " + encodeURIComponent(CordaForma) + "%0a"
-    + "*Data da entrega:* " + encodeURIComponent(dataFormatada) + "%0a";
+    + "*Data da entrega:* " + encodeURIComponent(dataFormatada) + "%0a"
+    + "*Total:* R$ " + encodeURIComponent(total) + "%0a";
 
   window.open(url, '_blank');
 }
