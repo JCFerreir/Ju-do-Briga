@@ -75,11 +75,12 @@ function sendwhatsapp() {
   var total = document.getElementById('total-price').textContent;
 
   var url = "https://wa.me/" + numTelefone + "?text="
-    + "*Nome:* " + encodeURIComponent(nome) + "%0a"
-    + "*Itens selecionados:* " + encodeURIComponent(itemsText) + "%0a"
-    + "*Cor da forma:* " + encodeURIComponent(CordaForma) + "%0a"
-    + "*Data da entrega:* " + encodeURIComponent(dataFormatada) + "%0a"
-    + "*Total:* R$ " + encodeURIComponent(total) + "%0a";
+    + "*Novo Orçamento!!* " + "%0a"
+    + "Nome: " + encodeURIComponent(nome) + "%0a"
+    + "Itens selecionados: " + encodeURIComponent(itemsText) + "%0a"
+    + "Cor da forma: " + encodeURIComponent(CordaForma) + "%0a"
+    + "Data da entrega: " + encodeURIComponent(dataFormatada) + "%0a"
+    + "Total: R$ " + encodeURIComponent(total) + "%0a";
 
   window.open(url, '_blank');
 }
