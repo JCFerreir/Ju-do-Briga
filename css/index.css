@@ -142,24 +142,36 @@ body {
         top: -20px;
         left: 20px;
     }
+
+    .cumprimento{
+        flex-direction: column-reverse;
+    }
 }
 
 /* Estilos responsivos para dispositivos móveis */
 @media (max-width: 500px) {
     .titulo-principal {
-        margin-top: 20vh;
-        font-size: 4vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+        font-size: 5vh;
         width: 100%;
     }
 
     .titulo-secundario {
-        font-size: 2.5vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
         width: 100%;
-        margin-bottom: 20vh;
+        margin-bottom: 0vh;
     }
 
     .cumprimento {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center; /* Centraliza os elementos */
         margin-left: 2%;
     }
@@ -226,7 +238,6 @@ body {
     position: absolute;
     top: 0;
     display: flex;
-    margin-top: 3vh;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFB3D1  100%);
     justify-content: center;
     align-items: center;

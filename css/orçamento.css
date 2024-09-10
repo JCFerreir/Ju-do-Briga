@@ -23,7 +23,7 @@
 }
 
 .img-orçamento{
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
 }
 
@@ -71,8 +71,11 @@
   }
   
   .valor{
+    color: var(--rosa-color); 
+  }
+
+  .sabor{
     color: var(--rosa-color);
-    
   }
 
   .grama{
