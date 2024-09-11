@@ -329,6 +329,41 @@
         </div>
       </div>
 
+      <div class="item-container" style="margin-bottom: 15px;">
+        <div class="polaroide img-orçamento">
+          <img src="img/alfajor.jpg" alt="Foto 1">
+        </div>
+        <div class="description-and-quantity">
+          <div class="Sabor-orçamento">Alfajor</div>
+          <div class="valor">Preço unidade: R$ 5</div>
+          <div class="valor">Preço acima de 15: R$ 4</div>
+          <div class="sabor">Chocolate:</div>
+          <div class="checkbox-alfajor">
+              <label>
+                <input type="checkbox" id="chocolate-branco" data-price="0"> Chocolate Branco
+              </label>
+              <label>
+                <input type="checkbox" id="chocolate-preto" data-price="0"> Chocolate Preto
+              </label>
+          </div>
+          <div class="sabor">Adicional:</div>
+          <div class="checkbox-alfajor">
+              <label>
+                <input type="checkbox" id="chocolate-branco" data-price="0"> Amendiom
+              </label>
+              <label>
+                <input type="checkbox" id="chocolate-preto" data-price="0"> Flocos de Arroz
+              </label>
+          </div>
+          <div class="sabor">Quantidade:</div>
+          <div class="quantity-control" data-price="10">
+            <button type="button" class="decrement" onclick="decrementQuantity('quantity14')">-</button>
+            <input type="number" class="quantity-input" id="quantity14" value="0" min="0" readonly>
+            <button type="button" class="increment" onclick="incrementQuantity('quantity14')">+</button>
+          </div>
+        </div>
+      </div>
+
       <div class="total-container">
         <p><strong>Total:</strong> R$ <span id="total-price">0.00</span></p>
       </div>

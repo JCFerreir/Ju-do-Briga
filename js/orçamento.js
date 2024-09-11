@@ -31,7 +31,8 @@ function updateTotal() {
     { id: 'quantity10', price: 2.50, discountPrice: 1.20 }, //Prestigio
     { id: 'quantity11', price: 2.50, discountPrice: 1.20 }, // Paçoca
     { id: 'quantity12', price: 10, discountPrice: 10 }, // Pipoca chocolate preto
-    { id: 'quantity13', price: 10, discountPrice: 10 } // Pipoca chocolate branco
+    { id: 'quantity13', price: 10, discountPrice: 10 }, // Pipoca chocolate branco
+    { id: 'quantity14', price: 5, discountPrice: 4 } // Alfajor
     // Adicione mais itens conforme necessário
   ];
 
