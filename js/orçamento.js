@@ -36,6 +36,11 @@ function updateTotal() {
     // Adicione mais itens conforme necessário
   ];
 
+   // Quantidade de alfajores e preço
+   var quantidadeAlfajor = parseInt(document.getElementById('quantity14').value) || 0;
+   var precoAlfajor = (quantidadeAlfajor >= 15) ? 4 : 5; // Aplica desconto acima de 15
+   total += quantidadeAlfajor * precoAlfajor;
+
   itemQuantities.forEach(function(item) {
     var quantity = parseInt(document.getElementById(item.id).value);
     totalQuantity += (isNaN(quantity) ? 0 : quantity); // Soma a quantidade total de itens
@@ -61,9 +66,9 @@ function updateTotal() {
 //FINAL DO BOTÃO DE CONTROLE DE QUANTIDADE
 
 
-//SISTEMA PARA MANDAR PARA O WHATSAPP
+// SISTEMA PARA MANDAR PARA O WHATSAPP
 function sendwhatsapp() {
-  var numTelefone = "+5511951526585"; // Número de telefone no formato internacional
+  var numTelefone = "+5511992638169"; // Número de telefone no formato internacional
   var nome = document.getElementById('name').value;
   var CordaForma = document.getElementById('CordaForma').value;
   var data = document.getElementById('data').value;
@@ -83,9 +88,22 @@ function sendwhatsapp() {
     {id: 'quantity10', label: 'Prestigio'},
     {id: 'quantity11', label: 'Paçoca'},
     {id: 'quantity12', label: 'Pipoca Gourmet (Chocolate Preto)'},
-    {id: 'quantity13', label: 'Pipoca Gourmet (Chocolate Branco)'}
+    {id: 'quantity13', label: 'Pipoca Gourmet (Chocolate Branco)'},
+    {id: 'quantity14', label: 'Alfajor'}
     // Adicione mais itens conforme necessário
   ];
+
+  // Capturar as opções de chocolate
+  var chocolateBranco = document.getElementById("chocolate-branco").checked ? "Chocolate Branco" : "";
+  var chocolatePreto = document.getElementById("chocolate-preto").checked ? "Chocolate Preto" : "";
+
+  // Capturar os adicionais
+  var amendoim = document.getElementById("amendoim").checked ? "Amendoim" : "";
+  var flocosArroz = document.getElementById("flocos-arroz").checked ? "Flocos de Arroz" : "";
+
+  // Verificar se algum sabor/adicional foi selecionado
+  var sabores = [chocolateBranco, chocolatePreto].filter(Boolean).join(", ");
+  var adicionais = [amendoim, flocosArroz].filter(Boolean).join(", ");
 
   itemQuantities.forEach(function(item) {
     var quantity = document.getElementById(item.id).value;
@@ -105,14 +123,27 @@ function sendwhatsapp() {
 
   var total = document.getElementById('total-price').textContent;
 
-  var url = "https://wa.me/" + numTelefone + "?text="
-    + "*Novo Orçamento!!* " + "%0a"
+  // Variável para armazenar a mensagem completa
+  var mensagem = "*Novo Orçamento!!* %0a"
     + "Nome: " + encodeURIComponent(nome) + "%0a"
     + "Itens selecionados: " + encodeURIComponent(itemsText) + "%0a"
     + "Cor da forma: " + encodeURIComponent(CordaForma) + "%0a"
     + "Data da entrega: " + encodeURIComponent(dataFormatada) + "%0a"
     + "Total: R$ " + encodeURIComponent(total) + "%0a";
 
+  // Verifica se o alfajor foi selecionado
+  var quantidadeAlfajor = parseInt(document.getElementById('quantity14').value) || 0;
+  if (quantidadeAlfajor > 0) {
+    mensagem += "%0aPedido de Alfajor:%0a";
+    mensagem += "Quantidade: " + encodeURIComponent(quantidadeAlfajor) + "%0a";
+    mensagem += "Sabores: " + encodeURIComponent(sabores) + "%0a";
+    mensagem += "Adicionais: " + encodeURIComponent(adicionais) + "%0a";
+  }
+
+  // Monta a URL do WhatsApp com a mensagem completa
+  var url = "https://wa.me/" + numTelefone + "?text=" + mensagem;
+
+  // Abre o WhatsApp com a mensagem
   window.open(url, '_blank');
 }
-//FINAL DO SISTEMA PARA MANDAR PARA O WHATSAPP
+// FINAL DO SISTEMA PARA MANDAR PARA O WHATSAPP

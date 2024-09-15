@@ -23,7 +23,7 @@
 }
 
 .img-orçamento{
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -65,34 +65,40 @@
   }
   
   .Sabor-orçamento {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #fff;
     font-family: 'Itim', cursive;
   }
   
-  .valor{
+  .valor, .sabor, .grama, .quantidade{
     color: var(--rosa-color); 
+    font-size: 1.3em;
   }
 
-  .sabor{
-    color: var(--rosa-color);
-  }
-
-  .grama{
-    color: var(--rosa-color);
-  }
-
-  .quantidade{
-    margin-bottom: 5px;
-    color: var(--rosa-color);
+  .flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   /* Estilos responsivos para dispositivos móveis */
-@media (max-width: 480px) {
+@media (max-width: 880px) {
   .titulo-orçamento {
       margin-top: 2vh;
       font-size: 4vh;
       width: 100%;
+  }
+
+  .Sabor-orçamento{
+    font-size: 1.3em;
+  }
+
+  .valor, .sabor, .grama, .quantidade{
+    font-size: 1em;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
   }
 }
 
