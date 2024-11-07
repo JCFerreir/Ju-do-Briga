@@ -39,14 +39,14 @@ body {
 
 /*cumprimento*/
 .titulo-principal{
-    font-size: 6.5vh;
+    font-size: 5.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
     margin-top: 40vh;
 }
 
 .titulo-secundario{
-    font-size: 3.5vh;
+    font-size: 2.6vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
     margin-bottom: 40vh;
@@ -54,11 +54,12 @@ body {
 
 
 .cumprimento {
+    max-width: 1080px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20vh;
-    margin-left: 10%;
 }
 
 .titulos {
@@ -97,7 +98,7 @@ body {
     position: absolute;
     top: -30px;
     left: 30px;
-    width: 100%;
+    width: 290px;
     height: 100%;
     background-color: var(--rosa-color);
     z-index: 1;
@@ -106,88 +107,18 @@ body {
 
 .img-cumprimento {
     position: relative;
-    width: 100%;
+    width: 290px;
     height: auto;
     z-index: 2;
     border-radius: 2vw;
 }
 
-/* Estilos responsivos para dispositivos menores */
-@media (max-width: 768px) {
-    .titulo-principal {
-        font-size: 5vh;
-        width: 60vh;
-    }
-
-    .titulo-secundario {
-        font-size: 3vh;
-        width: 70vh;
-        margin-bottom: 30vh;
-    }
-
-    .cumprimento {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 5%;
-        margin-bottom: 20vh;
-    }
-
-    .imagem-wrapper {
-        max-width: 50%;
-        margin-right: 0;
-        margin-top: 5%;
-    }
-
-    .imagem-fundo {
-        top: -20px;
-        left: 20px;
-    }
-
-    .cumprimento{
-        flex-direction: column-reverse;
-    }
-}
-
-/* Estilos responsivos para dispositivos móveis */
-@media (max-width: 500px) {
-    .titulo-principal {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10vh;
-        font-size: 5vh;
-        width: 100%;
-    }
-
-    .titulo-secundario {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: 3vh;
-        width: 100%;
-        margin-bottom: 0vh;
-    }
-
-    .cumprimento {
-        flex-direction: column-reverse;
-        align-items: center; /* Centraliza os elementos */
-        margin-left: 2%;
-    }
-
-
-    .imagem-fundo {
-        top: -15px;
-        left: 15px;
-    }
-}
-
-
 /*final do cumprimento*/
 
 /*carrossel*/
 .product {
+    max-width: 1080px;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     padding: 20px;
@@ -218,7 +149,8 @@ body {
     flex: 0 0 auto;
     width: 250px;
     height: 450px;
-    margin-right: 40px;
+    margin-top: 50px;
+    margin-right: 30px;
   } 
   
 
@@ -233,12 +165,12 @@ body {
   .pre-btn,
   .nxt-btn {
     border: none;
-    width: 5vw;
-    height: 80%;
+    width: 10vw;
+    height: 100%;
     position: absolute;
     top: 0;
     display: flex;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFB3D1  100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffb3d100  100%);
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -280,7 +212,10 @@ body {
 
 /*quem somos*/
 .titulo-texto {
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
     font-size: 5.5vh;
     color: var(--rosa-color);
     font-family: 'Itim', cursive;
@@ -289,41 +224,45 @@ body {
 
 .conteudo-quem-somos {
     display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 20vh;
 }
 
 .conteudo-quem-somos img {
-    max-width: 25%;
-    height: auto;
+    max-width: 1000px;
+    height: 500px;
     margin-top: 1%;
-    margin-left: 10%;
     border-radius: 2vw;
 }
 
 .conteudo-quem-somos .texto-quem-somos {
     background-color: var(--rosa-color);
-    width: 95vh;
-    height: auto;
+    width: 450px;
+    height: 500px;
     border-radius: 2vw;
-    margin-right: 10%;
     margin-top: 1%;
+    margin-left: 50px;
 }
 
 .texto-quem-somos p {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     font-family: 'Itim', cursive;
     color: var(--rosê-color);
-    font-size: 1.8vw;
-    margin-left: 3%;
-    margin-top: 10%;
+    font-size: 25px;
 }
 
 /*final do quem somos*/
 
 /*5 motivos*/
+.conteudo-5-motivos{
+    max-width: 1080px;
+    margin: 0 auto;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -337,7 +276,7 @@ body {
     gap: 10px;
     text-align: center;
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     margin-top: 1%;
 }
 
@@ -347,15 +286,19 @@ body {
     border-radius: 2vw;
     font-family: 'Itim', cursive;
     color: var(--rosê-color);
-    font-size: 3.5vh;
+    font-size: 24px;
+    height: 100px;
+    text-align: center;
 }
 
 .motivo {
+    display: flex;
     background-color: var(--rosa-color);
     border-radius: 2vw;
     font-family: 'Itim', cursive;
     color: var(--rosê-color);
-    font-size: 3.5vh;
+    font-size: 25px;
+    text-align: center;
 }
 
 /*final do 5 motivos*/
@@ -394,24 +337,142 @@ footer {
 /*FINAL DO FOOTER*/
 
 /* Responsividade */
-@media (max-width: 768px) {
-    .titulo-texto {
-        font-size: 4vh;
-        margin: 5%;
+@media (max-width: 1370px){
+
+    .cumprimento{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+    .titulo-principal{
+        font-size: 6.5vh;
+    }
+
+    .titulo-secundario{
+        font-size: 3.1vh;
+    }
+
+    .product{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .titulo-texto{
+        font-size: 6.5vh;
+    }
+
+    .conteudo-quem-somos{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .conteudo-5-motivos{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .texto-5-motivos > .full-width {
+        font-size: 25px;
+        height: 140px;
         text-align: center;
+    }
+
+}
+/* Estilos responsivos para dispositivos menores */
+@media (max-width: 768px) {
+
+    .cumprimento {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 300px;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .imagem-fundo {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        width: 150px;
+        height: 100%;
+        background-color: var(--rosa-color);
+        z-index: 1;
+        border-radius: 2vw;
+    }
+    
+    .img-cumprimento {
+        position: relative;
+        width: 150px;
+        height: auto;
+        z-index: 2;
+        border-radius: 2vw;
+    }
+
+    .titulo-principal {
+        font-size: 4vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    .titulo-secundario {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+
+    .titulo-texto{
+        font-size: 3.5vh;
+    }
+
+    .product{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        width: 150px;
+        height: 225px;
+    }
+
+    .Sabor{
+        font-size: 2.5vh;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      border: none;
+      width: 10vw;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffb3d1  100%);
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 8;
     }
 
     .conteudo-quem-somos {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: 20vh;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 
     .conteudo-quem-somos img {
-        width: 80%;
-        margin-left: 0;
         margin-bottom: 2%;
+        max-width: 150px;
+        height: auto;
     }
 
     .conteudo-quem-somos .texto-quem-somos {
@@ -420,13 +481,19 @@ footer {
     }
 
     .texto-quem-somos p {
-        font-size: 5vw;
+        font-size: 3vh;
         margin: 5%;
     }
 
     .container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .conteudo-5-motivos{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 
     .texto-5-motivos {
@@ -441,8 +508,16 @@ footer {
     }
 
     .motivo {
-        font-size: 5vw;
+        font-size: 20px;
+        text-align: center;
     }
+
+    .texto-5-motivos > .full-width {
+        font-size: 20px;
+        height: 200px;
+        text-align: center;
+    }
+
 
     .container-footer {
         flex-direction: column;
@@ -460,7 +535,6 @@ footer {
         margin: 10px 5px;
     }
 }
-
   
 
  
