@@ -1,0 +1,545 @@
+:root {
+    --rosa-color: #D01760;
+    --rosê-color: #FFB3D1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+/* Centraliza os itens dentro da navbar */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes-sociais {
+    display: flex;
+    align-items: center;
+  }
+  
+/*FINAL DO HEADER*/
+
+
+/*MAIN*/
+body {
+    font-family: 'Itim', cursive;
+    background-color: var(--rosê-color);
+    color: var(--rosa-color);
+}
+
+/*cumprimento*/
+.titulo-principal{
+    font-size: 5.5vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
+    margin-top: 40vh;
+}
+
+.titulo-secundario{
+    font-size: 2.6vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
+    margin-bottom: 40vh;
+}
+
+
+.cumprimento {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-principal {
+    width: 70vh;
+}
+
+.titulo-secundario {
+    width: 81vh;
+}
+
+.imagem-wrapper {
+    position: relative;
+    max-width: 25%;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 13%;
+    border-radius: 2vw;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.imagem-fundo {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 290px;
+    height: 100%;
+    background-color: var(--rosa-color);
+    z-index: 1;
+    border-radius: 2vw;
+}
+
+.img-cumprimento {
+    position: relative;
+    width: 290px;
+    height: auto;
+    z-index: 2;
+    border-radius: 2vw;
+}
+
+/*final do cumprimento*/
+
+/*carrossel*/
+.product {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  /*foto*/
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-top: 50px;
+    margin-right: 30px;
+  } 
+  
+
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  /*botão*/
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffb3d100  100%);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+
+  .polaroide {
+    background: var(--rosa-color);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.polaroide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1vw;
+
+}
+
+.Sabor {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+/*final do carrossel*/
+
+/*quem somos*/
+.titulo-texto {
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 5.5vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
+}
+
+
+.conteudo-quem-somos {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+.conteudo-quem-somos img {
+    max-width: 1000px;
+    height: 500px;
+    margin-top: 1%;
+    border-radius: 2vw;
+}
+
+.conteudo-quem-somos .texto-quem-somos {
+    background-color: var(--rosa-color);
+    width: 450px;
+    height: 500px;
+    border-radius: 2vw;
+    margin-top: 1%;
+    margin-left: 50px;
+}
+
+.texto-quem-somos p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Itim', cursive;
+    color: var(--rosê-color);
+    font-size: 25px;
+}
+
+/*final do quem somos*/
+
+/*5 motivos*/
+.conteudo-5-motivos{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.texto-5-motivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 1%;
+}
+
+.texto-5-motivos > .full-width {
+    grid-column: span 2;
+    background-color: var(--rosa-color);
+    border-radius: 2vw;
+    font-family: 'Itim', cursive;
+    color: var(--rosê-color);
+    font-size: 24px;
+    height: 100px;
+    text-align: center;
+}
+
+.motivo {
+    display: flex;
+    background-color: var(--rosa-color);
+    border-radius: 2vw;
+    font-family: 'Itim', cursive;
+    color: var(--rosê-color);
+    font-size: 25px;
+    text-align: center;
+}
+
+/*final do 5 motivos*/
+
+/*FINAL DO MAIN*/
+
+/*FOOTER*/
+footer {
+    background-color: var(--rosa-color);
+    margin-top: 10%;
+}
+
+.container-footer {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-footer {
+    color: var(--rosê-color);
+    margin-left: 10%;
+}
+
+.redes-sociais i {
+    color: var(--rosê-color);
+    font-size: 5vh;
+    margin-right: 30px;
+}
+
+/*efeitos*/
+.efeito-txt-topo, .efeito-titulo-topo, .efeito1, .efeito2, .efeito3, .efeito4, .efeito5, .titulos,.imagem-wrapper {
+    visibility: hidden;
+}
+
+/*FINAL DO FOOTER*/
+
+/* Responsividade */
+@media (max-width: 1370px){
+
+    .cumprimento{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+    .titulo-principal{
+        font-size: 6.5vh;
+    }
+
+    .titulo-secundario{
+        font-size: 3.1vh;
+    }
+
+    .product{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .titulo-texto{
+        font-size: 6.5vh;
+    }
+
+    .conteudo-quem-somos{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .conteudo-5-motivos{
+        max-width: 1000px;
+        margin: 0 auto;    
+    }
+
+    .texto-5-motivos > .full-width {
+        font-size: 25px;
+        height: 140px;
+        text-align: center;
+    }
+
+}
+/* Estilos responsivos para dispositivos menores */
+@media (max-width: 768px) {
+
+    .cumprimento {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 300px;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center; /* Centraliza os elementos */
+    }
+
+    .imagem-fundo {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        width: 150px;
+        height: 100%;
+        background-color: var(--rosa-color);
+        z-index: 1;
+        border-radius: 2vw;
+    }
+    
+    .img-cumprimento {
+        position: relative;
+        width: 150px;
+        height: auto;
+        z-index: 2;
+        border-radius: 2vw;
+    }
+
+    .titulo-principal {
+        font-size: 3vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    .titulo-secundario {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vh;
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+
+    .titulo-texto{
+        font-size: 3vh;
+    }
+
+    .product{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        width: 150px;
+        height: 225px;
+    }
+
+    .Sabor{
+        font-size: 2.5vh;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+      border: none;
+      width: 10vw;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffb3d1  100%);
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 8;
+    }
+
+    .conteudo-quem-somos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .conteudo-quem-somos img {
+        margin-bottom: 2%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .conteudo-quem-somos .texto-quem-somos {
+        width: 90%;
+        margin: 0;
+    }
+
+    .texto-quem-somos p {
+        font-size: 20px;
+        margin: 5%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-5-motivos{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .texto-5-motivos {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        width: 90%;
+    }
+
+    .texto-5-motivos .full-width {
+        grid-column: span 1;
+        font-size: 5vw;
+    }
+
+    .motivo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .texto-5-motivos > .full-width {
+        font-size: 20px;
+        height: 200px;
+        text-align: center;
+    }
+
+
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 5% 0;
+    }
+
+    .titulo-footer {
+        margin: 10px 0;
+    }
+
+    .redes-sociais i {
+        font-size: 4vh;
+        margin: 10px 5px;
+    }
+}
+  
+
+ 
+
+ 
+
+  
+  

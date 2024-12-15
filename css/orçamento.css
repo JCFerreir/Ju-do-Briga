@@ -1,0 +1,106 @@
+:root {
+    --rosa-color: #D01760;
+    --rosê-color: #FFB3D1;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Itim', cursive;
+}
+
+.titulo-orçamento{
+    font-size: 4.5vh;
+    color: var(--rosa-color);
+    font-family: 'Itim', cursive;
+}
+
+.img-orçamento{
+    max-width: 300px;
+    height: auto;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+  
+  
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 2vw;
+  background-color: var(--rosa-color);
+  color: var(--rosê-color);
+  cursor: pointer;
+  font-size: 18px;
+}
+  
+.quantity-control input {
+  width: 80px;
+  text-align: center;
+  border: 1px solid var(--rosa-color);
+  margin: 0 5px;
+  border-radius: 2vw;
+}
+
+.item-container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+  .description-and-quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px; /* Ajuste conforme necessário */
+  }
+  
+  .Sabor-orçamento {
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Itim', cursive;
+  }
+  
+  .valor, .sabor, .grama, .quantidade{
+    color: var(--rosa-color); 
+    font-size: 1.3em;
+  }
+
+  .flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Estilos responsivos para dispositivos móveis */
+@media (max-width: 880px) {
+  .titulo-orçamento {
+      margin-top: 2vh;
+      font-size: 4vh;
+      width: 100%;
+  }
+
+  .Sabor-orçamento{
+    font-size: 1.3em;
+  }
+
+  .valor, .sabor, .grama, .quantidade{
+    font-size: 1em;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+  
+  
